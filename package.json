@@ -16,7 +16,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "npx nodemon index.js",
     "dev": "nodemon index.js"
   },
   "author": "",
