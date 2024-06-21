@@ -1,0 +1,201 @@
+html {
+  /* font-size:1rem; */
+  /* percentage of user's browsers fontsize precentage */
+  font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* ---------- PAGE LAYOUT ------------ */
+
+body {
+  width: 120rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem 4rem 2rem 4rem;
+  overflow-x: hidden;
+}
+
+main {
+  margin: 5rem 3rem 0 5rem;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text--color--title);
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+/* ---------- REUSABLE CLASSES ------------ */
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  padding-bottom: 0.5rem;
+}
+
+.section__title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--text--color--title);
+}
+
+.--position-bottom {
+  position: relative;
+  bottom: 0;
+}
+
+.btn {
+  display: block;
+  width: 20rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2rem;
+  text-decoration: none;
+  color: var(--btn--text--color--default);
+  border-radius: var(--btn--border-radius);
+  background-color: var(--btn--background--default);
+  line-height: normal;
+  margin: 0 4rem 2rem 4rem;
+}
+
+.btn:hover {
+  color: var(--btn--text--color--hover);
+  background-color: var(--btn--background--hover);
+  font-size: 2rem;
+  transition: all, 0.4s;
+}
+
+.--btn-emphasize {
+  background-color: var(--btn--background--default);
+}
+
+.catalogue__btn {
+  display: block;
+  width: 30rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2rem;
+  text-decoration: none;
+  color: var(--btn--text--color--default);
+  border-radius: var(--btn--border-radius);
+  background-color: var(--btn--background--default);
+  line-height: normal;
+}
+.catalogue__btn:hover {
+  color: var(--btn--text--color--hover);
+  background-color: var(--btn--background--hover);
+  font-size: 2rem;
+  transition: all, 0.4s;
+}
+
+.--available {
+  font-weight: 700;
+  display: inline-block;
+  background-color: rgb(137, 220, 137);
+  font-weight: 700;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: var(--text--border-radius);
+}
+
+.--unavailable {
+  display: inline-block;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgb(214, 61, 50);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: var(--text--border-radius);
+}
+
+/* ---------- CAROUSSEL------------ */
+.news__slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  width: 100vw;
+  align-items: CENTER;
+  justify-content: center;
+}
+
+.slider__btn:hover,
+.slider__btn:focus {
+  background-color: var(--btn--background--hover);
+  color: var(--btn--text--color--hover);
+}
+
+.carousel__controls {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__btn {
+  height: 8rem;
+  width: 4rem;
+  z-index: 2;
+  display: inline-block;
+  font-weight: 800;
+  background-color: var(--btn--background--default);
+  border: 0;
+  border-radius: var(--btn--slider--border-radius);
+  color: var(--btn--text--color--default);
+  padding: 0.5rem;
+}
+
+.carousel__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.carousel__dots .active {
+  border: 1rem solid var(--btn--background--hover);
+}
+
+.carousel__dots .inactive {
+  border: 1rem solid var(--btn--background--default);
+}
+
+.btn_selector {
+  border: none;
+  background-color: var(--btn--background--default);
+  border-radius: var(--btn--border-radius);
+  padding: 2rem 3rem 2rem 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--btn--text--color--default);
+}
+.btn_selector:hover {
+  background-color: var(--btn--background--hover);
+  color: var(--btn--text--color--hover);
+}

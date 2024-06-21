@@ -1,0 +1,42 @@
+<%- include("./partials/header") %>
+<main>
+  <section class="catalogue__title">
+    
+    <p > Notre Catalogue </p>
+  </section>
+  <section class="catalogue_filters ">
+    <form action="/catalog/categories" id="" method="get" >
+    <select class="catalogue_selector" name="catalogue" id="catalogue-category">
+      <option value=""> Catégorie </option>
+      <%  getCoffeeCategories.forEach(coffee => { %>
+        <option value="<%= coffee.caracteristics %>"><%= coffee.caracteristics %></option>
+        <%})%>
+    </select>
+    <button class="btn_selector" > Filtrer </button>
+  </form>
+  </section>
+  <section>
+    <div class="catalogue__list">
+      <% result.forEach((coffee,index) => {%>
+        <article class="catalogue__article <%= index>3 ? "--hidden" : "" %>">
+          <div class="catalogue__article__image__container">
+            <img
+              class="catalogue__article__image"
+              src="/images/coffees/<%=coffee.reference %>.png"
+              alt="Café en grains"
+            />
+          </div>
+          <div class="catalogue__article__content">
+            <h1 class="catalogue__article__content__title"><%= coffee.name%></h1>
+            <p ><%= coffee.description %>
+            </p>
+          </div>
+          <a class="btn --position-bottom"  href="/product/<%=coffee.id%>">Decouvrir</a>
+        </article>
+        <% });%>
+  </section>
+  <button class="catalogue__btn" id="article__see__more" >Voir plus</button>
+  <button class="catalogue__btn --hidden" id="article__see__less" >Voir moins</button>
+</main>   
+<script src="/js/view-more.js"></script>
+ <%- include("./partials/footer") %>

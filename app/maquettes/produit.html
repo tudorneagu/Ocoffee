@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Boutique en ligne O'Coffee" />
+    <meta
+      name="keywords"
+      content="cafée, coffee, boutique, HautsdeCoques, Jaqcques et Jean Pepper"
+    />
+
+    <link rel="stylesheet" href="../../public/css/base/_reset.css" />
+    <link rel="stylesheet" href="../../public/css/abstracts/_variables.css" />
+    <link rel="stylesheet" href="../../public/css/base/_typography.css" />
+    <link rel="stylesheet" href="../../public/css/base/_general.css" />
+    <link rel="stylesheet" href="../../public/css/components/_navigation.css" />
+    <link rel="stylesheet" href="../../public/css/layouts/produit.css" />
+    <link rel="stylesheet" href="../../public/css/abstracts/_media.css" />
+
+    <title>oCoffee</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <div class="navigation__header">
+          <img
+            class="navigation__header__logo"
+            src="../../public/images/logo.svg"
+            alt="oCoffee-logo"
+            aria-label="oCoffee-logo"
+          />
+          <span class="navigation__header__title">oCoffee</span>
+        </div>
+
+        <ul class="navigation__menu">
+          <li>
+            <a class="navigation__link" href="/app/maquettes/home.html"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a class="navigation__link" href="/app/maquettes/about.html"
+              >A propos</a
+            >
+          </li>
+          <li>
+            <a class="navigation__link" href="/app/maquettes/catalogue.html"
+              >Catalogue</a
+            >
+          </li>
+          <li>
+            <a
+              class="navigation__link--emphasize"
+              href="/app/maquettes/boutique.html"
+              >Boutique</a
+            >
+          </li>
+        </ul>
+        <button class="navigation__menu-mobile">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon
+            class="icon-mobile-nav-close"
+            name="close-outline"
+          ></ion-icon>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="produit">
+        <img
+          class="produit__image"
+          src="../../public/images/coffees/100955890.png"
+          alt="Café en grains"
+        />
+
+        <div class="produit__cnt">
+          <h1 class="produit__cnt__title">Espresso</h1>
+          <span class="produit__cnt__description">
+            <h3>Description:</h3>
+            <p>
+              Café fort et concentré préparé en faisant passer de l'eau chaude à
+              travers du café finement moulu.
+            </p>
+          </span>
+          <span class="produit__cnt__origin">
+            <h3>Origine:</h3>
+            <p>Italie</p>
+          </span>
+          <span class="produit__cnt__price">
+            <h3>Prix:</h3>
+            <p>20.99 €</p>
+          </span>
+          <span class="produit__cnt__caracteristic">
+            <h3>Caractéristiques:</h3>
+            <p>Corsé</p>
+          </span>
+          <span class="produit__cnt__availability">
+            <h3>Disponibilité:</h3>
+            <p class="--available">Oui</p>
+          </span>
+        </div>
+        <a class="btn --position-bottom" href="#">Ajouter au panier</a>
+      </section>
+    </main>
+    <footer><p>O'Clock &amp; Pepper Brothers - Tous droits réservés</p></footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/app/js/mobile-nav.js"></script>
+  </body>
+</html>

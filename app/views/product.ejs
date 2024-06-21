@@ -1,0 +1,38 @@
+<%- include("./partials/header") %>   
+<main>
+  <section class="produit">
+    <img
+      class="produit__image"
+      src="/images/coffees/<%= getCoffee.reference%>.png"
+      alt="Café en grains"
+    />
+
+    <div class="produit__cnt">
+      <h1 class="produit__cnt__title"><%= getCoffee.name%></h1>
+      <span class="produit__cnt__description">
+        <h3>Description:</h3>
+        <p><%= getCoffee.description%>
+        </p>
+      </span>
+      <span class="produit__cnt__origin">
+        <h3>Origine:</h3>
+        <p><%= getCoffee.origin%></p>
+      </span>
+      <span class="produit__cnt__price">
+        <h3>Prix:</h3>
+        <p><%= getCoffee.price%>€</p>
+      </span>
+      <span class="produit__cnt__caracteristic">
+        <h3>Caractéristiques</h3>
+        <p><%= getCoffee.caracteristics%></p>
+      </span>
+      <span class="produit__cnt__availability">
+        <h3>Disponibilité:</h3>
+        <p  class="<%= getCoffee.availability ? '--available' :'--unavailable' %>">
+          <%=  getCoffee.availability ? "En stock": "En rupture" %> </p>
+      </span>
+    </div>
+    <a class="btn --position-bottom" href="#">Ajouter au panier</a>
+  </section>
+</main>
+ <%- include("./partials/footer") %>

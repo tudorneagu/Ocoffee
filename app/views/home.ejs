@@ -1,0 +1,75 @@
+<%- include("./partials/header") %>
+    <main>
+      <!-- <-------------HERO SECTION --------------->
+
+      <section class="hero">
+        <article class="hero__content">
+          <h1 class="section__title">Qui sommes-nous?</h1>
+          <p class="hero__content__text">
+            Jean et George , deux frères passionnés par le café, sont les
+            fondateurs de notre boutique. Avec une expertise approfondie et un
+            amour profond pour cette délicieuse boisson, ils ont créé un espace
+            où le café est célébré comme une expérience raffinée et inspirante.
+          </p>
+          <a class="catalogue__btn" href="/catalog"/>Voir le catalogue</a>
+        </article>
+        <article>
+          <img
+            class="hero__image"
+            src="/images/GC JD.jpg"
+            alt="Café en grains"
+          />
+
+        </article>
+      </section>
+
+      <!-- <-------------NEWS SECTION --------------->
+
+      <section class="news__section">
+        <div class="section__title">
+          <p>&mdash; Nouveautés &mdash; </p>
+        </div>
+        
+          <section class="news__container">
+            <div class="news__carousel">
+              <div class="news__carousel__inner">
+                <% getNewCoffee.forEach(coffee => {%>
+                  <article class="news__article" id="news__article--1">
+                    <div class="news__article__image__container">
+                      <img
+                        class="news__article__image"
+                        src="/images/coffees/<%= coffee.reference %>.png"
+                        alt="Café en grains"
+                      />
+                    </div>
+                    <div class="news__article__content">
+                      <h1 class="news__article__content__title"><%= coffee.name %></h1>
+                      <p class="news__article__content__description">
+                        <%= coffee.description %>
+                      </p>
+                   </div>
+                    <a class="btn --position-bottom" href="/product/<%= coffee.id %>">Decouvrir</a>
+                    </article>
+                 <% }) %>
+              </div>
+            </div>
+          
+            <div class="carousel__controls">
+              <button class="slider__btn " id="slider--left" type="button" aria-label="Précédent"> 
+                <span> &lt;</span>          
+              </button>
+
+              <button class="slider__btn" id="slider--right" type="button" aria-label="Suivant">
+              <span> &gt;</span>      
+             </button>
+            </div>
+  
+          <div class="carousel__dots"></div>
+            </section>
+      </section>
+      <script src="/js/mobileNewsCarousel.js"> </script>
+
+        <!-- <-------------CONTACT SECTION --------------->
+    </main>
+   
+    <%- include("./partials/footer") %>

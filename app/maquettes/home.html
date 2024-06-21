@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Boutique en ligne O'Coffee" />
+    <meta
+      name="keywords"
+      content="cafée, coffee, boutique, HautsdeCoques, Jaqcques et Jean Pepper"
+    />
+
+    <link rel="stylesheet" href="../../public/css/base/_reset.css" />
+    <link rel="stylesheet" href="../../public/css/abstracts/_variables.css" />
+    <link rel="stylesheet" href="../../public/css/base/_typography.css" />
+    <link rel="stylesheet" href="../../public/css/base/_general.css" />
+    <link rel="stylesheet" href="../../public/css/components/_navigation.css" />
+    <link rel="stylesheet" href="../../public/css/layouts/home.css" />
+    <link rel="stylesheet" href="../../public/css/abstracts/_media.css" />
+    <title>oCoffee</title>
+  </head>
+  <body>
+    <header class="header ">
+      <nav class="navigation">
+        <div class="navigation__header">
+          <img
+            class="navigation__header__logo"
+            src="../../public/images/logo.svg"
+            alt="oCoffee-logo"
+            aria-label="oCoffee-logo"
+          />
+          <span class="navigation__header__title">oCoffee</span>
+        </div>
+
+        <ul class="navigation__menu">
+          <li>
+            <a class="navigation__link" href="/app/maquettes/home.html">Accueil</a>
+          </li>
+          <li>
+            <a class="navigation__link" href="/app/maquettes/about.html">A propos</a>
+          </li>
+          <li>
+            <a class="navigation__link" href="/app/maquettes/catalogue.html">Catalogue</a>
+          </li>
+          <li>
+            <a class="navigation__link--emphasize" href="/app/maquettesboutique.html"
+              >Boutique</a
+            >
+          </li>
+        </ul>
+        <button class="navigation__menu-mobile">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav-close" name="close-outline"></ion-icon>
+        </button>
+      </nav>
+      
+      
+    </header>
+    <main>
+      <!-- <-------------HERO SECTION --------------->
+
+      <section class="hero">
+        <article class="hero__content">
+          <h1 class="section__title">Qui sommes-nous?</h1>
+          <p class="hero__content__text">
+            Jean et George , deux frères passionnés par le café, sont les
+            fondateurs de notre boutique. Avec une expertise approfondie et un
+            amour profond pour cette délicieuse boisson, ils ont créé un espace
+            où le café est célébré comme une expérience raffinée et inspirante.
+          </p>
+          <a class="catalogue__btn" href="../maquettes/catalogue.html"/>Voir le catalogue</a>
+        </article>
+        <article>
+          <img
+            class="hero__image"
+            src="../../public/images/GC JD.jpg"
+            alt="Café en grains"
+          />
+
+        </article>
+      </section>
+
+      <!-- <-------------NEWS SECTION --------------->
+
+      <section class="news__section">
+        <div class="section__title">
+          <p>&#9866; Nouveautés &#9866; </p>
+        </div>
+        <div class="news">
+          <article class="news__article">
+            <div class="news__article__image__container">
+              <img
+                class="news__article__image"
+                src="../../public/images/coffees/100955890.png"
+                alt="Café en grains"
+              />
+            </div>
+            <div class="news__article__content">
+              <h1 class="news__article__content__title">Espresso</h1>
+              <p class="news__article__content__description">
+                Café fort et concentré préparé en faisant passer de l'eau chaude
+                à travers du café finement moulu.
+              </p>
+           </div>
+            <a class="btn --position-bottom" href="/app/maquettes/produit.html">Decouvrir</a>
+   
+          </article>
+
+          <article class="news__article">
+            <div class="news__article__image__container">
+              <img
+                class="news__article__image"
+                src="../../public/images/coffees/100955894.png"
+                alt="Café en grains"
+              />
+            </div>
+            <div class="news__article__content">
+              <h1 class="news__article__content__title">Columbian</h1>
+              <p class="news__article__content__description">
+                Café moyennement corsé avec une acidité vive et une saveur
+                riche.
+              </p>            
+            </div>
+            <a class="btn" href="/app/maquettes/produit.html">Decouvrir</a>
+          </article>
+
+          <article class="news__article">
+            <div class="news__article__image__container">
+              <img
+                class="news__article__image"
+                src="../../public/images/coffees/105589090.png"
+                alt="Café en grains"
+              />
+            </div>
+            <div class="news__article__content">
+              <h1 class="news__article__content__title">
+                Ethiopian Yirgacheffe
+              </h1>
+              <p class="news__article__content__description">
+                Réputé pour son arôme floral, son acidité vive et ses notes de
+                saveur citronnée.
+              </p>
+            </div>
+            <a class="btn" href="/app/maquettes/produit.html">Decouvrir</a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer><p>O'Clock &amp; Pepper Brothers - Tous droits réservés</p></footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="/app/js/mobile-nav.js"></script>
+  </body>
+  
+</html>

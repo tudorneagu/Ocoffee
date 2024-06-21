@@ -1,0 +1,14 @@
+.container {
+  height: 100vh;
+  background-image: url("/images/404.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 5rem;
+}
+
+.image__404 {
+  object-fit: contain;
+  height: 80vh;
+  width: auto;
+}

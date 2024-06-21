@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Boutique en ligne O'Coffee" />
+    <meta
+      name="keywords"
+      content="cafée, coffee, boutique, HautsdeCoques, Jaqcques et Jean Pepper"
+    />
+
+    <link rel="stylesheet" href="../../public/css/base/_reset.css" />
+    <link rel="stylesheet" href="../../public/css/abstracts/_variables.css" />
+    <link rel="stylesheet" href="../../public/css/base/_typography.css" />
+    <link rel="stylesheet" href="../../public/css/base/_general.css" />
+    <link rel="stylesheet" href="../../public/css/components/_navigation.css" />
+    <link rel="stylesheet" href="../../public/css/layouts/catalogue.css" />
+    <link rel="stylesheet" href="../../public/css/abstracts/_media.css" />
+    
+    <title>oCoffee</title>
+  </head>
+  <body>
+    <header class="header ">
+      <nav class="navigation">
+        <div class="navigation__header">
+          <img
+            class="navigation__header__logo"
+            src="../../public/images/logo.svg"
+            alt="oCoffee-logo"
+            aria-label="oCoffee-logo"
+          />
+          <span class="navigation__header__title">oCoffee</span>
+        </div>
+
+        <ul class="navigation__menu">
+          <li>
+            <a class="navigation__link" href="/app/maquettes/home.html">Accueil</a>
+          </li>
+          <li>
+            <a class="navigation__link" href="/app/maquettes/about.html">A propos</a>
+          </li>
+          <li>
+            <a class="navigation__link" href="/app/maquettes/catalogue.html">Catalogue</a>
+          </li>
+          <li>
+            <a class="navigation__link--emphasize" href="/app/maquettes/boutique.html"
+              >Boutique</a
+            >
+          </li>
+        </ul>
+        <button class="navigation__menu-mobile">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav-close" name="close-outline"></ion-icon>
+        </button>
+      </nav>
+      
+      
+    </header>
+    <main>
+      <section class="catalogue__title">
+        
+        <p > Notre Catalogue </p>
+      </section>
+      <section class="catalogue_filters ">
+        <select name="catalogue" id="catalogue-category">
+          <option value=""> Catégorie</option>
+          <option value="Categorie 1"> Categorie 1</option>
+          <option value="Categorie 2"> Categorie 2</option>
+          <option value="Categorie 3"> Categorie 3</option>
+        </select>
+      </section>
+      <section>
+        <div class="catalogue__list">
+          <article class="catalogue__article">
+            <div class="catalogue__article__image__container">
+              <img
+                class="catalogue__article__image"
+                src="../../public/images/coffees/100955890.png"
+                alt="Café en grains"
+              />
+            </div>
+            <div class="catalogue__article__content">
+              <h1 class="catalogue__article__content__title">Espresso</h1>
+              <p >
+                Café fort et concentré préparé en faisant passer de l'eau chaude
+                à travers du café finement moulu.
+
+              </p>
+
+              <a class="btn --position-bottom" href="/app/maquettes/produit.html">Decouvrir</a>
+            </div>
+          </article>
+          <article class="catalogue__article">
+            <div class="catalogue__article__image__container">
+              <img
+                class="catalogue__article__image"
+                src="../../public/images/coffees/100955890.png"
+                alt="Café en grains"
+              />
+            </div>
+            <div class="catalogue__article__content">
+              <h1 class="catalogue__article__content__title">Espresso</h1>
+              <p class="catalogue__article__content__description">
+                Café fort et concentré préparé en faisant passer de l'eau chaude
+                à travers du café finement moulu.
+              </p>
+
+              <a class="btn --position-bottom" href="/app/maquettes/produit.html">Decouvrir</a>
+            </div>
+          </article>
+          <article class="catalogue__article">
+            <div class="catalogue__article__image__container">
+              <img
+                class="catalogue__article__image"
+                src="../../public/images/coffees/100955890.png"
+                alt="Café en grains"
+              />
+            </div>
+            <div class="catalogue__article__content">
+              <h1 class="catalogue__article__content__title">Espresso</h1>
+              <p class="catalogue__article__content__description">
+                Café fort et concentré préparé en faisant passer de l'eau chaude
+                à travers du café finement moulu.
+              </p>
+
+              <a class="btn --position-bottom" href="/app/maquettes/produit.html">Decouvrir</a>
+            </div>
+          </article>
+      </section>
+      <a class="catalogue__btn" href="../maquettes/catalogue.html"/>Voir le catalogue</a>
+    </main>
+    <footer><p>O'Clock &amp; Pepper Brothers - Tous droits réservés</p></footer>
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/app/js/mobile-nav.js"></script>
+  </body>
+</html>

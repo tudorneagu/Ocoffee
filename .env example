@@ -1,0 +1,2 @@
+PG=5000
+PG_URL=postgresql://tudor:tudor@localhost:4000/ocoffee
