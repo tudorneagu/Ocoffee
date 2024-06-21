@@ -1,0 +1,24 @@
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+  gap: 2rem;
+}
+
+.contact_field {
+  border: solid 2px var(--btn--text--color--hover);
+  background-color: var(--btn--background--default);
+  border-radius: var(--btn--border-radius);
+  padding: 2rem 3rem 2rem 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--btn--text--color--default);
+}
+
+.contact_text {
+  font-size: 2rem;
+}
+
+.text_field {
+}

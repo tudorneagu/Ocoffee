@@ -1,0 +1,22 @@
+#map {
+  height: 30rem;
+  width: 80%;
+  border-radius: var(--btn--border-radius);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  gap: 2rem;
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+
+  place-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+.about__content p {
+  width: 90%;
+}

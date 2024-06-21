@@ -1,4 +1,18 @@
 <%- include("./partials/header") %>   
+<main>
+<form class="contact_form" method="POST" action ="/contact">
+  <label class="contact_text" for="first-name"> Prénom</label>
+  <input class="contact_field" type="text" id="first-name" name="first-name" required />
+  <label class="contact_text" for="last-name"> Nom</label>
+  <input class="contact_field" type="text" id="last-name" name="last-name" required />
+  <label class="contact_text" for="email"> Email de contact</label>
+  <input class="contact_field" type="email" id="email" name="email" required/>
+  <label class="contact_text" for="message"> Votre message</label>
+  <textarea class="contact_field text_field" type="text" id="message" name="message" cols="40" rows="10" required></textarea>
+  <button class="btn_selector" > Filtrer </button>
+</form>
 
+
+</main>
 
  <%- include("./partials/footer") %>

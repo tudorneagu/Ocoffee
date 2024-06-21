@@ -2,6 +2,7 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
+    "emailjs": "^4.0.3",
     "express": "^4.19.2",
     "express-session": "^1.18.0",
     "nodemon": "^3.1.3",

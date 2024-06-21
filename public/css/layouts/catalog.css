@@ -68,7 +68,7 @@
 }
 
 .catalogue__article__image__container {
-  height: 40rem;
+  height: 100%;
   overflow: hidden;
 }
 .catalogue__article__image {

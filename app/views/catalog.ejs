@@ -18,7 +18,7 @@
   <section>
     <div class="catalogue__list">
       <% result.forEach((coffee,index) => {%>
-        <article class="catalogue__article <%= index>3 ? "--hidden" : "" %>">
+        <article class="catalogue__article <%= index>2 ? "--hidden" : "" %>">
           <div class="catalogue__article__image__container">
             <img
               class="catalogue__article__image"
@@ -38,5 +38,5 @@
   <button class="catalogue__btn" id="article__see__more" >Voir plus</button>
   <button class="catalogue__btn --hidden" id="article__see__less" >Voir moins</button>
 </main>   
-<script src="/js/view-more.js"></script>
+<script src="/js/viewMore.js"></script>
  <%- include("./partials/footer") %>

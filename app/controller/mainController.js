@@ -7,7 +7,7 @@ const mainController = {
   },
 
   aboutPage: (request, response) => {
-    response.render("about", { css: "catalog" });
+    response.render("about", { css: "about" });
   },
 
   catalogPage: async (request, response) => {
@@ -35,6 +35,10 @@ const mainController = {
 
   contactPage: (request, response) => {
     response.render("contact", { css: "contact" });
+  },
+
+  sentPage: (request, response) => {
+    response.render("sent", { css: "contact" });
   },
 
   shopPage: (request, response) => {
