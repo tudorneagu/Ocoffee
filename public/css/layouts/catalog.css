@@ -55,6 +55,7 @@
 .catalogue__article {
   display: flex;
   flex-direction: column;
+  place-items: center;
   height: 50rem;
   width: 95%;
   border-radius: var(--news--article--border-radius);
