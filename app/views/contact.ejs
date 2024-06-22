@@ -1,6 +1,8 @@
 <%- include("./partials/header") %>   
 <main>
-<form class="contact_form" method="POST" action ="/contact">
+  <h2 class="--hidden" id="message--sent">Votre message à été envoyé!</h2>
+  <h2 class="--hidden" id="message--error">Désolé votre message n'a pas pu être envoyé! Veuillez reessayer!</h2>
+<form class="contact_form" action="/send-mail" method="POST">
   <label class="contact_text" for="first-name"> Prénom</label>
   <input class="contact_field" type="text" id="first-name" name="first-name" required />
   <label class="contact_text" for="last-name"> Nom</label>
@@ -9,10 +11,11 @@
   <input class="contact_field" type="email" id="email" name="email" required/>
   <label class="contact_text" for="message"> Votre message</label>
   <textarea class="contact_field text_field" type="text" id="message" name="message" cols="40" rows="10" required></textarea>
-  <button class="btn_selector" > Filtrer </button>
+  <button class="btn_selector " type="submit"> Envoyer </button>
 </form>
 
 
 </main>
+
 
  <%- include("./partials/footer") %>

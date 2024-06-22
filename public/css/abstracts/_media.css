@@ -84,14 +84,14 @@
   /* <--------- HOME LAYOUT ----------> */
 
   .hero {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     place-content: center;
     place-items: center;
+    gap:2rem;
   }
 
-  .hero__content {
-    width: 80%;
-  }
 
   .news__section {
     display: flex;
@@ -112,22 +112,47 @@
     width: 90%;
   }
 
-  .slider__btn {
+  .news__article__content {
+    width: 85%;
   }
+
+  .dot{
+    width: .5rem;
+    height: .5rem;
+  }
+    /* <--------- ABOUT LAYOUT ----------> */
+
+     #map{
+      z-index: 0;
+     }
+     .container{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+     }
 
   /* <--------- CATALOGUE LAYOUT ----------> */
 
   .catalogue__list {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 
   .produit {
     width: 90%;
   }
-}
+
 
 /* <--------- PRODUIT LAYOUT ----------> */
 
 .--hidden {
   display: none;
+}
+
+
+  /* <--------- CONTACT NAV ----------> */
+  .text_field{
+    width: 80vw;
+  }
 }
