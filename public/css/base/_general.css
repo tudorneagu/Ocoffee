@@ -62,7 +62,7 @@ h3 {
   bottom: 0;
 }
 
-
+/* ---------- BUTTON CLASSES------------ */
 
 .btn {
   display: block;
@@ -110,12 +110,28 @@ h3 {
   transition: all, 0.4s;
 }
 
+.--remove {
+  display: inline-block;
+  align-self: center;
+  width: auto;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--btn--text--color--default);
+  border-radius: var(--btn--border-radius);
+  background-color: var(--btn--background--default);
+}
+
+.--remove:hover {
+  font-size: 1rem;
+}
 /* ---------- STATUS CLASSES------------ */
 
 .--hidden {
-  display:none;
+  display: none;
 }
-
 
 .--available {
   font-weight: 700;
@@ -209,4 +225,3 @@ h3 {
   background-color: var(--btn--background--hover);
   color: var(--btn--text--color--hover);
 }
-

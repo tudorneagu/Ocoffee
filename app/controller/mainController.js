@@ -29,7 +29,7 @@ const mainController = {
 
   productPage: async (request, response) => {
     const getCoffee = await dataMapper.getCoffee(request.params.id);
-    console.log(getCoffee);
+
     response.render("product", { css: "product", getCoffee });
   },
 
@@ -39,10 +39,6 @@ const mainController = {
 
   sentPage: (request, response) => {
     response.render("sent", { css: "contact" });
-  },
-
-  shopPage: (request, response) => {
-    response.render("shop", { css: "shop" });
   },
 };
 

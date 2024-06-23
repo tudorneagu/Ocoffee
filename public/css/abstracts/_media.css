@@ -89,9 +89,8 @@
     flex-wrap: wrap;
     place-content: center;
     place-items: center;
-    gap:2rem;
+    gap: 2rem;
   }
-
 
   .news__section {
     display: flex;
@@ -116,20 +115,20 @@
     width: 85%;
   }
 
-  .dot{
-    width: .5rem;
-    height: .5rem;
+  .dot {
+    width: 0.5rem;
+    height: 0.5rem;
   }
-    /* <--------- ABOUT LAYOUT ----------> */
+  /* <--------- ABOUT LAYOUT ----------> */
 
-     #map{
-      z-index: 0;
-     }
-     .container{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-     }
+  #map {
+    z-index: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 
   /* <--------- CATALOGUE LAYOUT ----------> */
 
@@ -143,16 +142,20 @@
     width: 90%;
   }
 
+  /* <--------- PRODUIT LAYOUT ----------> */
 
-/* <--------- PRODUIT LAYOUT ----------> */
-
-.--hidden {
-  display: none;
-}
-
+  .--hidden {
+    display: none;
+  }
 
   /* <--------- CONTACT NAV ----------> */
-  .text_field{
+  .text_field {
     width: 80vw;
+  }
+
+  /* <--------- SHOP LAYOUT ----------> */
+
+  .--remove {
+    display: none;
   }
 }

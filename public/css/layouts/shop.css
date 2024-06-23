@@ -1,0 +1,64 @@
+.table {
+  width: 100%;
+}
+.cart__row {
+  border-bottom: 1px solid #000;
+}
+.table th {
+  font-size: 2rem;
+  padding: 2rem 0 2rem 0;
+}
+.table td {
+  display: table-cell;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 0 1rem 0;
+}
+.coffee__container__thmb {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+}
+.coffee__name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--btn--text--color--default);
+}
+
+.quantity__selector {
+  display: flex;
+  align-items: center;
+  place-content: center;
+  gap: 1rem;
+}
+
+.quantity__btn {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--btn--text--color--default);
+  background-color: var(--btn--background--default);
+  border: none;
+  border-radius: var(--btn--border-radius);
+}
+.quantity__btn:hover {
+  background-color: var(--btn--background--hover);
+  color: var(--btn--text--color--hover);
+}
+
+.quantity__input {
+  width: 4rem;
+  height: 3rem;
+  font-size: 1.5;
+  text-align: center;
+  border: none;
+  border-radius: var(--btn--border-radius);
+  background-color: var(--btn--background--default);
+  color: var(--btn--text--color--default);
+}

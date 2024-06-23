@@ -32,7 +32,7 @@
           <%=  getCoffee.availability ? "En stock": "En rupture" %> </p>
       </span>
     </div>
-    <a class="btn --position-bottom" href="/shop/add/<%= getCoffee.id%>">Ajouter au panier</a>
+    <a class="btn --position-bottom" href="/shop/add/<%=getCoffee.id%>">Ajouter au panier</a>
   </section>
 </main>
  <%- include("./partials/footer") %>

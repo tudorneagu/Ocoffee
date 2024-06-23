@@ -1,2 +1,38 @@
-<%- include("./partials/header") %>   
+<%- include("./partials/header") %>
+<main>
+  <table class="table">
+  <thead class="cart__row">
+    
+    <th>Article</th>
+    <th>Prix</th>
+    <th>Quantité</th>
+   
+  </thead>
+  <tbody>
+    <% cart.forEach((coffee, countIndex) =>{%>
+    <tr class="cart__row">
+      <td>
+        <p class="coffee__name"><%= coffee.name%></p>
+      </td>
+      <td class="coffee__price"><%= coffee.price%></td>
+      <td>
+        <div class="quantity__selector">
+        <button class="quantity__btn minus-btn" data-index="<%= countIndex %>">-</button>
+        <input type="number" class="quantity__input" value="1" min="1" max="10" readonly>
+        <button class="quantity__btn plus-btn" data-index="<%= countIndex %>">+</button>
+      </div></td>
+      <td><a class="btn --remove" href="/shop/remove/<%= coffee.id%>">Effacer</a></td>
+    </tr>
+    <% })%>
+  </tbody>
+  <tfoot class="cart__footer">
+    
+    <th>Total</th>
+   
+   
+  </tfoot>
+</table>
+</main>
+
+<script src="/js/cartCounter.js"></script>
 <%- include("./partials/footer") %>

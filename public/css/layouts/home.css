@@ -1,65 +1,55 @@
 /* <-------------HERO SECTION ---------------> */
 
-
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "title image"
-        "text image"
-        "button image";
-    width: 90%;
-    column-gap: 3rem; /* Add some spacing between elements */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  place-items: center;
+  grid-template-areas:
+    "title image"
+    "text image"
+    "button image";
+  width: 90%;
+  column-gap: 3rem; /* Add some spacing between elements */
 }
 
 .hero h1 {
-    grid-area: title;
+  grid-area: title;
 }
 
 .hero img {
-    grid-area: image;
-    max-width: 100%;
-    height: auto;
-    align-self: center;
-}
-
-.hero p {
-    grid-area: text;
-    font-size: 1.5rem;
-    line-height: 2rem;
-}
-
-.hero a {
-    grid-area: button;
-    justify-self: center;
-}
-
-
-.hero__content__text {
-  
-  margin-bottom: 1.5rem;
-}
-
-.hero__image {
+  grid-area: image;
+  max-width: 100%;
+  height: auto;
+  align-self: center;
   width: 100%;
-  grid-row: 1 / 2;
+
   border-radius: var(--news--article--border-radius);
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.12);
 }
 
+.hero p {
+  grid-area: text;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
 .hero__btn {
-  display: block;
-  width: 30rem;
-  text-align: center;
+  grid-area: button;
+  width: 70%;
+  display: flex;
+  place-content: center;
+  place-items: center;
+
   font-size: 2rem;
   font-weight: 600;
   padding: 2rem;
   text-decoration: none;
+
   color: var(--btn--text--color--default);
   border-radius: var(--btn--border-radius);
   background-color: var(--btn--background--default);
-  line-height: normal;
 }
 .hero__btn:hover {
   color: var(--btn--text--color--hover);

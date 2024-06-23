@@ -1,8 +1,8 @@
 const dotenv = require("dotenv");
 const express = require("express");
 const session = require("express-session");
-const bodyParser = require('body-parser');
-const emailjs = require('@emailjs/nodejs');
+const bodyParser = require("body-parser");
+const emailjs = require("@emailjs/nodejs");
 
 dotenv.config();
 
@@ -13,11 +13,11 @@ app.set("view engine", "ejs");
 app.set("views", "app/views");
 
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(
   session({
-    resave: true,
+    resave: false,
     saveUninitialized: true,
     secret: process.env.SECRET,
     cookie: {
@@ -26,6 +26,11 @@ app.use(
     },
   })
 );
+
+app.use((req, res, next) => {
+  console.log("Session:", req.session);
+  next();
+});
 
 app.use(router);
 
